@@ -12,11 +12,12 @@ print = (arg) -> console.log(arg)
 
 ############################################################
 abiHandler = require("./abihandlermodule")
+access = require("./accessmodule")
 
 ############################################################
 scihandlers.authenticate = (req, res, next) ->
     try
-        if req.body.authCode == "deadbeef" then next()
+        if req.body.authCode == access.authCode then next()
         else throw new Error("Wrong Auth Code!")
     catch err then res.send({error: err.stack})
     return

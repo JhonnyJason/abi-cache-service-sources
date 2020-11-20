@@ -9,6 +9,9 @@ debugmodule.initialize = () ->
 debugmodule.modulesToDebug = 
     unbreaker: true
     # configmodule: true
+    # abihandlermodule: true
+    # abistoremodule: true
+    # accessmodule: true
     # startupmodule: true
 
 #region exposed variables

@@ -1,0 +1,6 @@
+[submodule "source/persistentstatemodule"]
+	path = source/persistentstatemodule
+	url = git@github.com:JhonnyJason/service-sources-persistentstatemodule.git
+[submodule "source/networkmodule"]
+	path = source/networkmodule
+	url = git@github.com:JhonnyJason/service-sources-restnetworkmodule.git

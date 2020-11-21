@@ -13,7 +13,6 @@ print = (arg) -> console.log(arg)
 #region modules
 abiStore = null
 network = null
-access = null
 
 #endregion
 
@@ -21,7 +20,6 @@ access = null
 abihandlermodule.initialize = () ->
     log "abihandlermodule.initialize"
     network = allModules.networkmodule
-    access = allModules.accessmodule
     abiStore = allModules.abistoremodule
     return
     

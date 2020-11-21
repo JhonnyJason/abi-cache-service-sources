@@ -100,7 +100,7 @@ cacheRemoveExcess = ->
 
 saveState = ->
     try state.save("addressToABIMap", addressToABIMap)
-    catch err then processUnexpected err
+    catch err then log err
     return
 
 #endregion
